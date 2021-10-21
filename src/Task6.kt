@@ -11,5 +11,5 @@ fun main(args: Array<String>){
 }
 
 fun show (array: List<String>){
-    array.sorted().groupingBy { it }.eachCount().toSortedMap().forEach(::println)
+    array.sorted().groupingBy { it }.eachCount().map { "${it.key} ${it.value}" }.forEach(::println)
 }
