@@ -3,7 +3,7 @@
 *.class
 
 # idea folder
-.idea/
+../.idea/
 
 # images
 images/
@@ -19,3 +19,4 @@ images/
 *.tar.gz
 *.rar
 *.MF
+*.out
