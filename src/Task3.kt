@@ -1,5 +1,5 @@
 fun main (args: Array<String>){
-    args.distinct().forEach(::println)
+    args.distinct().sorted().forEach(::println)
 }
 
 
