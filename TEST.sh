@@ -17,7 +17,7 @@ count=0
 
 for (( i=1; i<=6; i++ ))
 do
-  out="$(java -jar ./"task$i".jar)"
+  out="$(java -jar ./"task$i".jar $given)"
   if [[ "${shouldBe[$i]}" != "$out" ]]; then
       printf "\nTest failed\n"
       ((count++))
